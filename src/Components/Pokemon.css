@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+.Pokemon__card{
+    width: 300px;
+    margin: 80px auto;
+    padding: 20px;
+    box-shadow: 2px 10px 17px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+.Pokemon__card h2{
+    text-align: center;
+}
+.Pokemon__card .image{
+    width: max-content;
+    margin: 0 auto;
+}
+.Pokemon__card img{
+    width: 150px;
+}
+.Pokemon__card .type{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    font-weight: bold;
+}
+.Pokemon__card .stats{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+.Pokemon__card .stats span{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+}
+@media(max-width:400px){
+    .Pokemon__card{
+        width: 260px;
+    }
+}
